@@ -13,8 +13,12 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - name: Compile Java
-        run: javac StudentApplication.java
+      - name: Build with Maven
+        run: mvn clean install
+      - name: Check Compilation Errors
+        run: mvn compile 2>&1 | grep "error"
+
+
 
 
     
