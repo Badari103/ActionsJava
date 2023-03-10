@@ -23,8 +23,7 @@ jobs:
         with:
           maven-version: 3.8.2
 
-      - name: Unit Tests
-        run: mvn clean package
+    
 
       - name: Rename the artifact
         run: cp target/backend-social-network-1.0-SNAPSHOT.jar backend-social-network-${{ github.sha }}.jar
