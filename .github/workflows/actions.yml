@@ -14,7 +14,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Compile Java
-        run: javac MyProgram.java
+        run: javac StudentApplication.java
 
 
     
